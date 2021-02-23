@@ -2,11 +2,11 @@ title: Parchment
 author: pro-panda
 subtitle: The life of a frustrated engineer
 
-url: "https://pro-panda.github.io"
-baseurl: "/parchment"
+url: "https://peon-pasado.github.io"
+baseurl: "/do-panic"
 
 footer_only_homepage: true
-footer_url: "https://github.com/pro-panda"
+footer_url: "https://github.com/peon-pasado"
 footer_text: "Theme by pro-panda"
 
 profile-picture: assets/profile.png

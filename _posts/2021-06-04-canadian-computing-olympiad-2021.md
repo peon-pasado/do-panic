@@ -11,6 +11,7 @@ tags: [CCO2021, competitive programming]
 ### hint 0:
 
 <details>
+<summary> </summary>
 permutations, sqrt-trick, offline, BIT, binary-search
 </details>
 

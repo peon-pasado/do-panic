@@ -10,7 +10,7 @@ tags: [CCO2021, competitive programming]
 <details>
 <summary> code </summary>
 
-```c++
+<code>
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -92,7 +92,7 @@ int main() {
     }
     return 0;
 }
-```
+<code>
 
 </details>
 

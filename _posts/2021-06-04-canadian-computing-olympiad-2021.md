@@ -10,7 +10,7 @@ tags: [CCO2021, competitive programming]
 <details>
 <summary> code </summary>
 
-{% highlight c++ %}
+{% highlight cpp %}
 
 #include <bits/stdc++.h>
 using namespace std;

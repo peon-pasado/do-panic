@@ -56,7 +56,7 @@ $ N p_i \times N p_{i+1} - 2 f(p_i, p_{i+1})$.
 
 <details>
 <summary>  </summary>
-Notemos que podemos aplicar el [sqrt-trick](https://youtu.be/VGq6w9TlJBY?t=4408) 
+Notemos que podemos aplicar el <a href="https://youtu.be/VGq6w9TlJBY?t=4408"> sqrt-trick </a> 
 para calcular $f$ en los $q$ pares que necesitamos consultar y guardarlos para
 ser hallados en $O(\log n)$. Notemos además, que $f(x, y) + f(y, x) = N x \times N y$.
 </details>

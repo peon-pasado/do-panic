@@ -10,7 +10,8 @@ tags: [CCO2021, competitive programming]
 <details>
 <summary> code </summary>
 
-<code language="c++">
+{% highlight c++ %}
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -92,7 +93,7 @@ int main() {
     }
     return 0;
 }
-</code>
+{% endhighlight %}
 
 </details>
 

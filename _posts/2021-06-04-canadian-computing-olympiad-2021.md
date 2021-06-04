@@ -8,8 +8,9 @@ tags: [CCO2021, competitive programming]
 <h2 class="color-blue">1. Swap Swap Sort</h2>
 
 
+### hint 0:
+
 <details>
-<summary> <h3>hint 0:</h3></summary>
 permutations, sqrt-trick, offline, BIT, binary-search
 </details>
 

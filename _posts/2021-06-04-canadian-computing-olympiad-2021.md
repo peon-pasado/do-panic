@@ -70,7 +70,7 @@ ser hallados en $O(\log n)$. Notemos además, que $f(x, y) + f(y, x) = N x \time
 <details>
 <summary>  </summary>
 Si los calculamos de forma usual y buscamos cuantos elementos estan en menor 
-posición en el conjunto grande por cada elemento en el conjunto pequeño tendremos
+posición en el conjunto grande por cada elemento en el conjunto pequeño, tendremos
 un factor logaritmico que nos malogrará la complejidad. Sin embargo, si el cálculo
 lo hacemos en un algoritmo offline, recorriendo los índices en orden ascendente
 vemos que no necesitamos hacer una busqueda binaria para calcular dichos valores ya

@@ -34,13 +34,13 @@ igual valor a los intercambiados.
 Si denotamos $f(x, y)$ como la cantidad de inversiones en el array $a$, 
 eliminando todos los elementos distintos de $x$ o $y$ y reemplazando
 los $x$ por 1 y los $y$ por 2. El cambio en la respuesta es 
-$ \# p_i \times \# p_{i+1} - 2 f(p_i, p_{i+1})$.
+$ N p_i \times N p_{i+1} - 2 f(p_i, p_{i+1})$.
 
 ### hint 5:
 
 Notemos que podemos aplicar el [sqrt-trick](https://youtu.be/VGq6w9TlJBY?t=4408) 
 para calcular $f$ en los $q$ pares que necesitamos consultar y guardarlos para
-ser hallados en $O(\log n)$. Notemos además, que $f(x, y) + f(y, x) = \# x \times \# y$.
+ser hallados en $O(\log n)$. Notemos además, que $f(x, y) + f(y, x) = N x \times N y$.
 
 ### hint 6:
 

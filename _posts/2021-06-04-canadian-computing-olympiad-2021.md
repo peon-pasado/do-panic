@@ -5,9 +5,7 @@ subtitle: Soluciones para el CCO 2021
 tags: [CCO2021, competitive programming]
 ---
 
-<span class="color-blue">
-# Swap Swap Sort
-</span>
+<span class="color-blue"># Swap Swap Sort</span>
 
 ### hint 0: 
 

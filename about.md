@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Me llamo Miguel Miní, hago programación competitiva y he sido dos veces mundial finalista de la ICPC.
+Mis tópicos preferidos son optimización combinatoria y teoría de grafos. Paricipé en el equipo de ajedrez
+de la Universidad Nacional de Ingeniería (UNI) en la Federación Deportista Universitaria del Perú (FEDUP).
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+- [profile Codeforces](https://codeforces.com/profile/Bashca)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[mminih@uni.pe](mailto:mminih@uni.pe)

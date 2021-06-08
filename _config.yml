@@ -1,28 +1,7 @@
-title: DO PANIC
-author: Bashca
-subtitle: just be here now
-
-url: "https://peon-pasado.github.io"
-baseurl: "/do-panic"
-
-footer_only_homepage: true
-footer_url: "https://github.com/pro-panda"
-footer_text: "Theme by pro-panda"
-
-profile-picture: assets/profile.png
-favicon_location: assets/favicon.ico
-
-permalink: /:year-:month-:day-:title/
-sass:
-    style: compressed
-    sass_dir: css
-
-navbar:
- - name: "About"
-   link: "about"
- - name: "Codeforces"
-   absolute-link: "https://codeforces.com/profile/Bashca"
-
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
+environment: prod
+url: "http://gregorygundersen.com"  # Sitemap base URL.
 plugins:
   - jekyll-scholar
   - jekyll-sitemap

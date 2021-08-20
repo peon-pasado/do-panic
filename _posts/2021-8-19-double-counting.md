@@ -53,7 +53,7 @@ vertices en $Y$.
 
 $b$. Si ${avg}_x$ es el promedio de los grados de los vértices en $X$ y ${avg}_y$
 es el promedio de los grados de los vértices en $Y$. Entonces 
-$\frac{{avg}_x}{{avg}_y} = \frac{|Y|}{|X|}$.
+$\frac{\text{avg}_x}{{avg}_y} = \frac{|Y|}{|X|}$.
 
 ### **D-regular Matching**
 

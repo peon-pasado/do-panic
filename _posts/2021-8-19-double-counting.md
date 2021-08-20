@@ -69,7 +69,7 @@ los vértices en $Y$ que tienen un arista hacia algún nodo de $U$. Entonces,
 **$|V| \ge |U| \frac{d_x}{d_y}$**. 
 
 <details>
-<summary>**Prueba**:</summary> Sea H un subgrafo de $G$ con conjunto de vértices $U$ y $V$, con las
+<summary><strong>Prueba:</strong></summary> Sea H un subgrafo de $G$ con conjunto de vértices $U$ y $V$, con las
 aristas inducidas de $G$. Entonces todo vértice en U tiene grado $d_x$ y todo
 vertice en $V$ tiene grado a lo más $d_Y$. 
 
@@ -140,13 +140,15 @@ natural considerar la relación $R$ sobre $G \times X$ al referirnos a puntos
 fijos sobre acciones. Nosotros definimos que $g \in G$ y $x \in X$ están relacionados si $g$ fija
 $x$. Simbólicamente:
 
-$$R = \{\(g, x\) \in G \times X ~\vert ~ g \dots x = x\}$$
+$$R = \{(g, x) \in G \times X ~\vert ~ g . x = x\}$$
 
 Ahora, de lo anterior, tenemos las projecciones $p: R \rightarrow G$ y $q: R \rightarrow X$. 
-Nosotros podemos interpretar $p^{-1}(g)$, para $g \in G$. Como el conjunto de puntos
-fijos de $g$ actuando sobre $X$, que denotamos como $X^g$. ¿Qué hay acerca de $q^{-1}(x)$, para
-$x \in X$? Este es precisamente el estabilizador de $x$, i.e. El subgrupo de $G$ consistiendo
-de puntos cual fijan $x$. Denotado por $G_x$.
+
+Nosotros podemos interpretar $p^{-1}(g)$, para $g \in G$. Como el conjunto 
+de puntos fijos de $g$ actuando sobre $X$, que denotamos como $X^g$. ¿Qué 
+hay acerca de $q^{-1} (x)$, para $x \in X$? Este es precisamente el 
+estabilizador de $x$, i.e. El subgrupo de $G$ consistiendo de puntos cual 
+fijan $x$. Denotado por $G_x$.
 
 Así el doble conteo nos da la identidad:
 

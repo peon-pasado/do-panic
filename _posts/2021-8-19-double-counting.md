@@ -141,16 +141,17 @@ fijos sobre acciones. Nosotros definimos que $g \in G$ y $x \in X$ están relaci
 $x$. Simbólicamente:
 
 $$R = \{(g, x) \in G \times X ~\vert ~ g \cdot x = x\}$$
+
 Ahora, de lo anterior, tenemos las projecciones $p: R \rightarrow G$ y $q: R \rightarrow X$. 
 Nosotros podemos interpretar $p^{-1}(g)$, para $g \in G$. Como el conjunto de puntos
 fijos de $g$ actuando sobre $X$, que denotamos como $X^g$. ¿Qué hay acerca de $q^{-1}(x)$, para
 $x \in X$? Este es precisamente el estabilizador de $x$, i.e. El subgrupo de $G$ consistiendo
 de puntos cual fijan $x$. Denotado por $G_x$.
 
-
 Así el doble conteo nos da la identidad:
 
 $$\sum_{g \in G} |X^g| = \sum_{x \in X} |G_x|$$
+
 Nosotros podemos reinterpretar esta formula por recalcar que si $x$ e $y$ están
 en la misma orbita de $G$, entonces $G_x$ y $G_y$ son conjugados. Así nosotros
 podemos reagrupar la segunda suma en sumas sobre el conjunto de clases
@@ -166,6 +167,7 @@ Donde $n$ denota el número de orbitas de $G$ actuando sobre $X$. Dividiendo amb
 por $|G|$, nosotros encontramos que:
 
 $$\dfrac{1}{|G|}\sum_{g \in G} |X^g| = n$$
+
 O, en otras paralabras:
 
 El número promedio de puntos fijos de un elemento de $G$ actuando sobre $X$ es igual al número de órbitas

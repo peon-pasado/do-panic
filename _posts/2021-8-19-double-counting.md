@@ -140,7 +140,7 @@ natural considerar la relación $R$ sobre $G \times X$ al referirnos a puntos
 fijos sobre acciones. Nosotros definimos que $g \in G$ y $x \in X$ están relacionados si $g$ fija
 $x$. Simbólicamente:
 
-$$R = \{(g, x) \in G \times X ~\vert ~ g \cdot x = x\}$$
+$$R = \{\(g, x\) \in G \times X ~\vert ~ g \dots x = x\}$$
 
 Ahora, de lo anterior, tenemos las projecciones $p: R \rightarrow G$ y $q: R \rightarrow X$. 
 Nosotros podemos interpretar $p^{-1}(g)$, para $g \in G$. Como el conjunto de puntos
@@ -166,7 +166,7 @@ $$\sum_{g \in G} |X^g| = n|G|$$
 Donde $n$ denota el número de orbitas de $G$ actuando sobre $X$. Dividiendo ambos lados
 por $|G|$, nosotros encontramos que:
 
-$$\dfrac{1}{|G|}\sum_{g \in G} |X^g| = n$$
+$$\frac{1}{|G|}\sum_{g \in G} |X^g| = n$$
 
 O, en otras paralabras:
 

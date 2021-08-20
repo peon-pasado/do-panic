@@ -17,11 +17,11 @@ Probar que $\binom{n}{0} + \binom{n}{1} + \dots + \binom{n}{n} = 2^n$.
 **ejercicio:** probar que $2^0 + 2^1 + \dots + 2^k = 2^{k+1} - 1$.
 
 <details>
-<summary> **hint 1:** </summary> contemos conjuntos no vacíos.
+<summary> <strong>hint 1:</strong> </summary> contemos conjuntos no vacíos.
 </details>
 
 <details>
-<summary> **hint 2:** </summary> fijemos un elemento como máximo.
+<summary> <strong>hint 2:</strong> </summary> fijemos un elemento como máximo.
 </details>
 
 ### **nivel 2**. Contando las aristas de un icosaedro.
@@ -29,7 +29,8 @@ Probar que $\binom{n}{0} + \binom{n}{1} + \dots + \binom{n}{n} = 2^n$.
 Probar que el número de aristas en un icosaedro es 30.
 
 <center>
-![](https://respuestas.tips/wp-content/uploads/2014/06/icosaedro.jpg){ width=33% }
+<img src="https://respuestas.tips/wp-content/uploads/2014/06/icosaedro.jpg" width="33%">
+
 </center>
 
 <details>
@@ -58,7 +59,7 @@ $\frac{\text{avg}_x}{\text{avg}_y} = \frac{|Y|}{|X|}$.
 ### **D-regular Matching**
 
 <center>
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa1nFShGwwVSXUG2YBcsZD6Kk-alcN1OnNtg&usqp=CAU){ width=33% }
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa1nFShGwwVSXUG2YBcsZD6Kk-alcN1OnNtg&usqp=CAU" width="33%">
 </center>
 
 Sea $G$ un grafo bipartito con conjuntos de vértices $X$ e $Y$. Supongamos que 
@@ -79,7 +80,7 @@ matching*.
 ### **Nivel 3**: Upper Shadows
 
 <center>
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Turan_13-4.svg/1200px-Turan_13-4.svg.png){ width=30% }
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Turan_13-4.svg/1200px-Turan_13-4.svg.png" width="30%">
 </center>
 
 Sea $A$ una colección de subconjuntos de $[n]$, con cada conjunto de tamaño 
@@ -88,7 +89,7 @@ de todos los conjuntos de tamaño $s$ tal que contienen al menos un elemento
 en $A$. Entonces el tamaño de $\nabla A \ge |A| \frac{\binom{n}{s}}{\binom{n}{r}}$.
 
 <details>
-<summary> **prueba**: </summary>
+<summary> <strong>prueba:</strong> </summary>
 
 Definamos un grafo bipartito con conjunto de vértices $A$ y $B = \nabla A$, 
 los nodos en $a \in A$ estan unidos a los nodos de $b \in B$ si y solo si 
@@ -111,7 +112,7 @@ de tamaño s.
 ### **Phantom Bipartite Graph**
 
 <center>
-![](https://www.researchgate.net/profile/Klaus-Heidtmann/publication/270881019/figure/fig2/AS:392161502744578@1470509996119/Abbildung-12-Beispiel-eines-Hypergraphen-Hypergraphen-bieten-mehr.png){width=30%}
+<img src="https://www.researchgate.net/profile/Klaus-Heidtmann/publication/270881019/figure/fig2/AS:392161502744578@1470509996119/Abbildung-12-Beispiel-eines-Hypergraphen-Hypergraphen-bieten-mehr.png" width="30%">
 </center>
 
 Usualmente nosotros tenemos un conjunto $X$ cuyo tamaño queremos acotar, pero
@@ -129,7 +130,7 @@ elemento de $X$ es contenido en al menos $d_x$ conjuntos de $B$ y cada conjunto
 en $B$ contiene a lo más $d$ elementos de $X$, entonces $|X| \le |B| \frac{d}{d_x}$.
 
 <details>
-<summary>**Prueba**:</summary> Contemos los pares ($x, b$), donde $x \in X$, $b \in B$ y $x \in b$.
+<summary><strong>Prueba:</strong></summary> Contemos los pares ($x, b$), donde $x \in X$, $b \in B$ y $x \in b$.
 </details>
 
 ### **Nivel 4:** Burnside Lemma

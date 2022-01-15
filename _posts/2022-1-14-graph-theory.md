@@ -38,15 +38,13 @@ $$V = \{x_0, x_1, \ldots , x_k  \} ~~~~E=\{x_0x_1, x_1x_2,\ldots, x_{k-1}x_k\}$$
 Donde los $x_i$ son todos distintos. Los vértices $x_0$ y $x_k$ son _enlazados_ por $P$ y son llamados _vértices finales_ o _finales_; los vértices $x_1, \ldots, x_{k-1}$ son los vértices internos de $P$. La longitud de un camino se define como la cantidad de aristas en $P$.
 
 <center>
-
-![](/images/path.png)
+<img src="{{site.url}}/do-panic/images/path.png">
 </center>
 
 Si $P = x_0\ldots x_{k-1}$ es un camino con $k \ge 3$, entonces el grafo $C := P + x_{k-1}x_0$ es llamado un ciclo. La _longitud_ de un ciclo es su número de aristas.
 
 <center>
-
-![](/images/ciclo.png)
+<img src="{{site.url}}/do-panic/images/ciclo.png">
 </center>
 
 __Ejemplo 1:__ Probar que todo grafo $G$ contiene un camino de longitud $\delta(G) = \min\limits_{v \in V} d(v)$. Además, si $\delta(G) \ge 2$ existe un ciclo de longitud al menos $\delta(G) + 1$.
@@ -54,8 +52,7 @@ __Ejemplo 1:__ Probar que todo grafo $G$ contiene un camino de longitud $\delta(
 __prueba:__ Si tomamos un nodo $x_0 \in V$ arbitrario, y elegimos el camino más largo iniciando en $x_0$, con el otro nodo final $x_k$, necesariamente todos los vecinos de $u$ pertenecen a este camino $P_{x_0, x_k}$, en otro caso podría extenderse. Finalmente el nodo vecino más alejado de $x_k$, por el camino, es al menos $d(x_k) \ge \delta(G)$. Similarmente para formar un ciclo.    
 
 <center>
-
-![](/images/path2.png)
+<img src="{{site.url}}/do-panic/images/path2.png">
 </center>
 
 ### Conectividad:
@@ -63,8 +60,7 @@ __prueba:__ Si tomamos un nodo $x_0 \in V$ arbitrario, y elegimos el camino más
 Un grafo $G$ es llamado _conexo_ si es no vacío y cualesquiera dos de sus vértices están enlazados por un camino en $G$. Dado  $U \subseteq V[G]$, i.e. Un subconjunto del conjunto de vértices de G, y similarmente $W \subseteq E[G]$, se define $G[U, W]$ como un grafo de expansión de $G$, un grafo de expansión conexo maximal es denominado una componente conexa, __todo grafo se puede particionar en una cantidad única de componentes conexas__.
 
 <center>
-
-![](/images/componentes.png)
+<img src="{{site.url}}/do-panic/images/componentes.png">
 </center>
 
 La imagen anterior representa un grafo con 3 componentes, además, en cada una de ellas se muestra una componente de expansión con mínima cantidad de aristas.
@@ -74,8 +70,7 @@ La imagen anterior representa un grafo con 3 componentes, además, en cada una d
 Nosotros podemos escoger entre dos maneras estándar de representar un grafo $G$: Como una colección de listas de adjacencia o como una matriz de adjacencia. La cantidad de memoria que usa cada representación es $O(V + E)$ y $O(V^2)$, respectivamente.
 
 <center>
-
-![](/images/repr.png)
+<img src="{{site.url}}/do-panic/images/repr.png">
 </center>
 
 La representación por __listas de adjacencia__ de un grafo $G$ consiste de un array ___Adj___ de $\vert V \vert$ listas (vectores), uno por cada vértice en $V$. Por cada $u \in V$, la lista de adjacencia ___Adj___$[u]$ contiene todos los vértices $v$ tal que existe una arista $(u, v) \in E$. 

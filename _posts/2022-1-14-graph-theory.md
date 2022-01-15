@@ -12,8 +12,7 @@ __Nota:__
 La forma habitual de representar un grafo es dibujar un punto para cada vértice y unir dos de estos puntos con una línea si el correspondiente dos vértices forman una arista. __Cómo se dibujan estos puntos y líneas es considerado irrelevante__: lo único que importa es la información de qué pares de vértices forman una arista y cuáles no.
 
 <center>
-
-![]({{site.url}}/do-panic/images/graph.png?raw=true)
+<img src="{{site.url}}/do-panic/images/graph.png">
 </center>
 
 ### El grado de un vértice

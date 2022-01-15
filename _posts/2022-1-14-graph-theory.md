@@ -81,7 +81,7 @@ Nosotros podemos escoger entre dos maneras estándar de representar un grafo $G$
 
 La representación por __listas de adjacencia__ de un grafo $G$ consiste de un array ___Adj___ de $|V|$ listas (vectores), uno por cada vértice en $V$. Por cada $u \in V$, la lista de adjacencia ___Adj___$[u]$ contiene todos los vértices $v$ tal que existe una arista $(u, v) \in E$. 
 
-```c++
+```cpp
 vector<pair<int, int>> E = {{1, 2}, {1, 5}, {2, 3}, 
                             {2, 4}, {2, 5}, {3, 4}, 
                             {4, 5}};
@@ -96,7 +96,7 @@ La representación por __matriz de adjacencia__ de un grafo $G$ consiste de una 
 
 $$a_{ij} = \begin{cases} 1 & \text{si} ~(i, j) \in E, \\ 0 & \text{en otro caso.}\end{cases}$$
 
-```c++
+```cpp
 vector<pair<int, int>> E = {{1, 2}, {1, 5}, {2, 3}, 
                             {2, 4}, {2, 5}, {3, 4}, 
                             {4, 5}};
@@ -140,7 +140,7 @@ Dado un nodo arbitrario $v$, cada camino empezando en $v$ es una sucesión de ar
 
 Notemos que este, en práctica es un proceso enumerativo, ___cuenta la cantidad de caminos empezando en cada configuración de aristas___.
 
-```c++
+```cpp
 vector<bool> in_path; //size = n
 void all_path(int v) {
     in_path[v] = true;
@@ -169,7 +169,7 @@ Supongamos que no llegamos a encontrar todos los nodos, sea $u$ uno de ellos y p
 
 ### Código para hallar componentes:
 
-```c++
+```cpp
 vector<bool> encontrado; //size = n
 vector<int> color; //size = n
 void dfs(int v, int comp_id) {

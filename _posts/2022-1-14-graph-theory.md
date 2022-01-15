@@ -1,4 +1,7 @@
-# Graph Theory
+---
+layout: post
+title: Graph Theory
+---
 
 ### Introducción:
 

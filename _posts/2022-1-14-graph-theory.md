@@ -20,13 +20,13 @@ La forma habitual de representar un grafo es dibujar un punto para cada vértice
 
 Sea $G = (V, E)$ un grafo (no vacío). El conjunto de _vecinos_ de un vértice $v$ en $G$ es denotado por $N_G(v)$, o susintamente por $N(v)$. Más generalmente por $U \subseteq V$, los vecinos en $V \setminus U$ de vértices $U$ son llamados _vecinos_ de $U$; su conjunto es denotado por $N(U)$.
 
-El grado $d_G(v) = d(v)$ de un vértice $v$ es la cantidad de vecinos de $v$ en $G$, numéricamente $|N(v)|$. 
+El grado $d_G(v) = d(v)$ de un vértice $v$ es la cantidad de vecinos de $v$ en $G$, numéricamente $\vert N(v)\vert$. 
 
 __Proposición:__ El número de vértices con grado impar de un grafo es siempre par.
 
 __prueba__: notemos por doble conteo que cada arista aporta con $2$ a la suma total de grados.
 
-$$\sum\limits_{x \in V} d(x) = \sum\limits_{(x, y) \in E} 2 = 2 \cdot |E| \equiv 0 \mod 2$$
+$$\sum\limits_{x \in V} d(x) = \sum\limits_{(x, y) \in E} 2 = 2 \cdot \vert E \vert \equiv 0 \mod 2$$
 
 Por tanto, al ser la suma de grados par, necesariamente la suma de grados impares es par.
 
@@ -61,7 +61,7 @@ __prueba:__ Si tomamos un nodo $x_0 \in V$ arbitrario, y elegimos el camino más
 
 ### Conectividad:
 
-Un grafo $G$ es llamado _conexo_ si es no vacío y cualesquiera dos de sus vértices están enlazados por un camino en $G$. Dado  $U \subseteq V[G]$, i.e. Un subconjunto del conjunto de vértices de G, y similarmente $W \subseteq E[G]$, se define G[U, W] como un grafo de expansión de $G$, un grafo de expansión conexo maximal es denominado una componente conexa, __todo grafo se puede particionar en una cantidad única de componentes conexas__.
+Un grafo $G$ es llamado _conexo_ si es no vacío y cualesquiera dos de sus vértices están enlazados por un camino en $G$. Dado  $U \subseteq V[G]$, i.e. Un subconjunto del conjunto de vértices de G, y similarmente $W \subseteq E[G]$, se define $G[U, W]$ como un grafo de expansión de $G$, un grafo de expansión conexo maximal es denominado una componente conexa, __todo grafo se puede particionar en una cantidad única de componentes conexas__.
 
 <center>
 
@@ -79,7 +79,7 @@ Nosotros podemos escoger entre dos maneras estándar de representar un grafo $G$
 ![](/images/repr.png)
 </center>
 
-La representación por __listas de adjacencia__ de un grafo $G$ consiste de un array ___Adj___ de $|V|$ listas (vectores), uno por cada vértice en $V$. Por cada $u \in V$, la lista de adjacencia ___Adj___$[u]$ contiene todos los vértices $v$ tal que existe una arista $(u, v) \in E$. 
+La representación por __listas de adjacencia__ de un grafo $G$ consiste de un array ___Adj___ de $\vert V \vert$ listas (vectores), uno por cada vértice en $V$. Por cada $u \in V$, la lista de adjacencia ___Adj___$[u]$ contiene todos los vértices $v$ tal que existe una arista $(u, v) \in E$. 
 
 {% raw %}
 ```cpp
@@ -94,7 +94,7 @@ for (auto [u, v] : E) {
 ```
 {% endraw %}
 
-La representación por __matriz de adjacencia__ de un grafo $G$ consiste de una matriz $|V|\times |V|$ $A = (a_{ij})$ tal que:
+La representación por __matriz de adjacencia__ de un grafo $G$ consiste de una matriz $\vert V\vert\times \vert V\vert$ $A = \left(a_{i j}\right)$ tal que:
 
 $$a_{ij} = \begin{cases} 1 & \text{si} ~(i, j) \in E, \\ 0 & \text{en otro caso.}\end{cases}$$
 
@@ -106,7 +106,7 @@ vector<pair<int, int>> E = {{1, 2}, {1, 5}, {2, 3},
 vector<vector<bool>> Adj(5+1, vector<bool>(5 + 1));
 for (auto [u, v] : E) {
     Adj[u][v] = Adj[v][u] = 1;
-}
+}   
 ```
 {% endraw %}
 
@@ -120,11 +120,11 @@ for (auto [u, v] : E) {
 
 4. El cuadrado de un grafo $G = (V, E)$ es el grafo $G^2 = (V, E^2)$ tal que $(u, v) \in E^2$, si y solo si, $G$ contiene un camino de longitud $2$ desde $u$ hasta $v$. Hallar para las representaciones standard el cuadrado de un grafo.
    
-5. Diseñe un algoritmo que en tiempo $O(V)$ decida si existe una ___fuente universal___ -Un nodo con __in-degree__ $|V|-1$ y __out-degree__ $0$.-
+5. Diseñe un algoritmo que en tiempo $O(V)$ decida si existe una ___fuente universal___ -Un nodo con __in-degree__ $\vert V\vert-1$ y __out-degree__ $0$.-
 
 6. Sea $G$ un grafo conteniendo un ciclo $C$, y asume que $G$ contiene un camino de longitud al menos $k$ entre dos vértices de $C$. Muestre que $G$ contiene un ciclo de longitud al menos $\sqrt k$.
 
-7. Mostrar que todo grafo conexo $G$ contiene un camino o un ciclo de longitud al menos $\min \{2\delta(G), |G|\}$.
+7. Mostrar que todo grafo conexo $G$ contiene un camino o un ciclo de longitud al menos $\min \{2\delta(G), \vert G \vert \}$.
 
 ### Reconocimiento de Componentes (intro. a DFS):
 
@@ -205,7 +205,7 @@ void colorear_componentes() {
 
 ### Complejidad:
 
-Basta usar la siguiente información: _como cada nodo es visitado una sola vez, esto quiere decir que sus aristas vecinas son consideradas una sola vez_. Por tanto, la complejidad debe ser: $O(|V| + |E|)$, visitamos cada arista $2$ veces, pero la complejidad _absorbe_ las constantes.
+Basta usar la siguiente información: _como cada nodo es visitado una sola vez, esto quiere decir que sus aristas vecinas son consideradas una sola vez_. Por tanto, la complejidad debe ser: $O(\vert V\vert + \vert E\vert)$, visitamos cada arista $2$ veces, pero la complejidad _absorbe_ las constantes.
 
 ## Problemas:
 

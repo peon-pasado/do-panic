@@ -118,7 +118,7 @@ for (auto [u, v] : E) {
 
 6. Sea $G$ un grafo conteniendo un ciclo $C$, y asume que $G$ contiene un camino de longitud al menos $k$ entre dos vértices de $C$. Muestre que $G$ contiene un ciclo de longitud al menos $\sqrt k$.
 
-7. Mostrar que todo grafo conexo $G$ contiene un camino o un ciclo de longitud al menos $\min \left\{2\delta(G), \vert G \vert \right\}$.
+7. Mostrar que todo grafo conexo $G$ contiene un camino o un ciclo de longitud al menos $\min \left(2\delta(G), \vert G \vert \right)$.
 
 ### Reconocimiento de Componentes (intro. a DFS):
 

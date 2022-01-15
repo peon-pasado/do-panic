@@ -163,8 +163,7 @@ __Una solución menos eploxiva:__
 Notemos que la cantidad de veces que consideramos un final, puede ser muy grande.
 
 <center>
-
-<img src=/images/paths.png height="500">
+<img src="do-panic/images/paths.png" height="500">
 </center>
 
 La imagen muestra que la cantidad de veces que consideramos un final puede ser grande. Sin embargo, ¿necesitamos visitar tantas veces un nodo?

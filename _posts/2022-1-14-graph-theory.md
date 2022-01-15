@@ -13,7 +13,7 @@ La forma habitual de representar un grafo es dibujar un punto para cada vértice
 
 <center>
 
-![](/images/graph.png)
+![](/do-panic/images/graph.png)
 </center>
 
 ### El grado de un vértice

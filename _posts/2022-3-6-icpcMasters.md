@@ -161,7 +161,7 @@ Given an image pattern and a board that consist of black and empty cells, we nee
 
 ## Solution
 
-To solve this problem we can just brute force each possible rotation and flip of the pattern and then check if the image fits or not using naive pattern searching. Since there will be a small number of different configurations, then it will fit in the time limit.
+To solve this problem we can just brute force each possible rotation and flip of the pattern and then check if the image fits or not using naive pattern searching. Since there will be a small number of different configurations, it will fit in the time limit.
 
 # [Problem J - Jaime's Room](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/J.cpp)
 
@@ -174,7 +174,7 @@ Given $n$ objects that are inside a room and $C$ boxes, we will receive $q$ quer
 - d $i$: Answer the label of the box that contains the object $i$.
 - s $i$ $j$: Check if the objects $i$ and $j$ are in the same place.
 
-### __Solution 1 (sqrt decomposition)__:
+## __Solution 1 (sqrt decomposition)__:
 
 We use the typical sqrt decomposition approach of dividing our array into blocks of size $B$, with a lazy tag if we need to update the color, a special value for each index if it has been removed, and its respective color otherwise. Also, each range has a color sorted list, which is not necessarily available when you have the lazy tag enabled.
 
@@ -188,10 +188,10 @@ Therefore, the cost we want to minimize is $B + \frac{n}{B} \log B$. whose optim
 
 ## [Solution 2 __(Amortized Analysis)__](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/J2.cpp)
 
-Let's consider that we get rid of the deletion query (b $k$), then this is a trivial problem that can be solved in $O(n\log{n})$ using sets and intervals for ranges with the same box. However, to add the deletion query we must notice that an object in the box $k$ is in the trash if:
+Let's consider that we get rid of the deletion query ($b$ $k$), then this is a trivial problem that can be solved in $O(n\log{n})$ using sets and intervals for ranges that are inside the same box. However, to add the deletion query we must notice that an object in the box $k$ is in the trash if:
 
 - The box $k$ was removed.
-- It was thrown to the trash by a previous box. This means that we won't really delete objects, since that would affect the complexity, we will only mark them as removed.
+- It was thrown to the trash when it was inside a previous box. However, we won't really delete objects (since that would affect the complexity), we will only mark them as removed.
 
 For the first condition, we can mantain a set of removed boxes and just check if $k$ is inside it in $O(\log{n})$.
 
@@ -207,7 +207,7 @@ Given $t$ values of $n$; for each of them, compute the number of permutations of
 
 ## Solution 
 
-This problem asks us to compute the *312-avoiding permutations*, which are related to the Catalan Numbers, so we only need to compute the $n$-th Catalan number for each $n$ given. This can be computed in $O(n)$ using the recurrence:
+This problem asks us to compute the *132-avoiding permutations*, which are related to the Catalan Numbers, so we only need to compute the $n$-th Catalan number for each $n$ given. This can be computed in $O(n)$ using the recurrence:
 
 $$ C_{n} = \frac{2(2n - 1)}{n + 1}C_{n - 1} $$
 

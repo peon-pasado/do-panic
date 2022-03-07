@@ -182,7 +182,7 @@ To eliminate a color we just have to go through each range and if it doesn't hav
 
 Therefore, the cost we want to minimize is $B + \frac{n}{B} \log B$. whose optimal value for $n = 100000$ is $B \sim 942$.
 
-## [Solution 2](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/J2.cpp) __(Amortized Analysis)__
+## [Solution 2 __(Amortized Analysis)__](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/J2.cpp)
 
 Let's consider that we get rid of the deletion query (b $k$), then this is a trivial problem that can be solved in $O(n\log{n})$ using sets and intervals for ranges with the same box. However, to add the deletion query we must notice that an object in the box $k$ is in the trash if:
 

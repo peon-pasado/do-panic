@@ -207,7 +207,31 @@ Given $t$ values of $n$; for each of them, compute the number of permutations of
 
 ## Solution 
 
-This problem asks us to compute the *132-avoiding permutations*, which are related to the Catalan Numbers, so we only need to compute the $n$-th Catalan number for each $n$ given. This can be computed in $O(n)$ using the recurrence:
+Victor Racso Galvan Oyola
+This problem asks us to compute the 132-avoiding permutations, which are related to the Catalan Numbers. How? Let's see:
+
+Let's consider that we will fix the position $i$ of the maximum element $n$ to compute $f_{n}$, then we will have to assign $i - 1$ elements to its left and $n - i$ elements to its right. However, if we choose some position $l$ to its left and some position $r$ to its right, then it shouldn't hold that:
+
+$$ p_{l} < p_{r} < p_{i} $$
+
+But since $p_{i}$ is the maximum value, we only care about the first inequality (since the second one will hold anyways):
+
+$$ p_{l} \not < p_{r} \rightarrow p_{l} > p_{r} $$
+
+But since $l$ and $r$ are arbitrary, in particular:
+
+$$ \min_{l}\{p_{l}\} > \max_{r}\{p_{r}\}  $$
+
+Which means that we should assign the values in range $[n - i + 1, n - 1]$ to the left and the other values to the right in a valid way ($f_{i - 1}$ and $f_{n - i}$).
+
+Now, we can fix $i$ as $1, 2, \ldots, n$, so we get the following recursion:
+
+$$ f_{1} = 1 $$
+$$ f_{n} = \sum_{i = 1}^{n}f_{i - 1}\cdot f_{n - i} \leftrightarrow f_{n} = \sum\limits_{i = 0}^{n - 1}f_{i} f_{n - i - 1} $$
+
+Which is equivalent to the computation of the $n$-th Catalan number.
+
+Thus, we only need to compute the $n$-th Catalan number for each $n$ given. This can be computed in $O(n)$ using the recurrence:
 
 $$ C_{n} = \frac{2(2n - 1)}{n + 1}C_{n - 1} $$
 

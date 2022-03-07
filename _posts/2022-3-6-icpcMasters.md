@@ -4,7 +4,7 @@ title: ICPC Masters Mexico 2022 Unofficial Editorial
 ---
 
 <center>
-<p>Authors: Rating Miserable</p>
+<p>Authors: Miguel Miní and Racsó Galván (Rating MiSeRable)</p>
 </center>
 
 # [Problem A - Animal Farm](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/A.cpp)

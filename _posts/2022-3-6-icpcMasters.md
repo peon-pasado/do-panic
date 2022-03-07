@@ -226,7 +226,8 @@ Which means that we should assign the values in range $[n - i + 1, n - 1]$ to th
 Now, we can fix $i$ as $1, 2, \ldots, n$, so we get the following recursion:
 
 $$ f_{1} = 1 $$
-$$ f_{n} = \sum_{i = 1}^{n}f_{i - 1}\cdot f_{n - i} \leftrightarrow f_{n} = \sum\limits_{i = 0}^{n - 1}f_{i} f_{n - i - 1} $$
+
+$$ f_{n} = \sum\limits_{i = 1}^{n} f_{i - 1}\cdot f_{n - i} \leftrightarrow f_{n} = \sum\limits_{i = 0}^{n - 1} f_{i} f_{n - i - 1} $$
 
 Which is equivalent to the computation of the $n$-th Catalan number.
 

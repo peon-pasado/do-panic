@@ -207,7 +207,6 @@ Given $t$ values of $n$; for each of them, compute the number of permutations of
 
 ## Solution 
 
-Victor Racso Galvan Oyola
 This problem asks us to compute the 132-avoiding permutations, which are related to the Catalan Numbers. How? Let's see:
 
 Let's consider that we will fix the position $i$ of the maximum element $n$ to compute $f_{n}$, then we will have to assign $i - 1$ elements to its left and $n - i$ elements to its right. However, if we choose some position $l$ to its left and some position $r$ to its right, then it shouldn't hold that:

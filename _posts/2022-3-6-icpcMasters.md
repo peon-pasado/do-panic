@@ -143,11 +143,11 @@ This reduces our memory usage to $O(1)$ and our complexity will be $O(N)$.
 
 ## Statement Summary
 
-Given a sequence of $N$ coins, not necessarily different, you're required to compute the minimum value that cannot be formed with a subset of them in such a way that each coin can be used only once and they are not divisible.
+Given a sequence of $N$ coins, not necessarily different, you're required to compute the minimum positive value that cannot be formed with a subset of them in such a way that each coin can be used only once and they are not divisible.
 
 ## Solution
 
-Note that if $1$ is not in my set, the answer is obviously $0$.
+Note that if $1$ is not in my set, the answer is obviously $1$.
 
 On the other hand, if I have $k$ coins with a value of $1$ and a coin with a value of $d \le k+1$, it's like we had $k + d$ coins of value $1$, this means that any value between $1$ and $k+d$ can be formed.
 

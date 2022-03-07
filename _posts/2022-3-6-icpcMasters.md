@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ICPC Masters Mexico Unofficial Editorial
+title: ICPC Masters Mexico 2022 Unofficial Editorial
 ---
 
 # [Problem A - Animal Farm](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/A.cpp)

@@ -1,3 +1,8 @@
+---
+layout: post
+title: problem A.
+---
+
 #include <bits/stdc++.h>
 #define all(v) v.begin(), v.end()
 using namespace std;

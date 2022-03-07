@@ -114,7 +114,7 @@ To solve this problem, we can just brute force the choice of flipping each possi
 
 ## Statement Summary
 
-Given a pile with $N$ snacks, there are two players that take turns alternately. In one turn, the active player can eat between $1$ and $\min\left\{N, M\right\}$  from the pile. Then:
+Given a pile with $N$ snacks, there are two players that take turns alternately. In one turn, the active player can eat between $1$ and $\min{\{N, M\}}$  from the pile. Then:
 
 - If the pile is empty after the active player eats, then he wins.
 - If the number of snacks remaining in the pile (counted in binary) contains an odd number of ones, then the active player loses.

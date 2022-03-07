@@ -13,7 +13,7 @@ Given an $n \times m$ matrix in which each cell might have walls in each directi
 
 To solve this problem we can build a graph in which two adyacent cells have an edge between them. Since the graph will have $nm$ nodes and at most $4nm$ edges, we can use any algorithm that computes connected components and a set to solve it in $O(nm\log{(nm)})$.
 
-# [Problem B - Sleeping Baker]({{site.url}}/do-panic/_sass/B.cpp)
+# [Problem B - Sleeping Baker](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/B.cpp)
 
 ## Statement Summary
 
@@ -29,7 +29,7 @@ Given an $n \times m$ binary matrix, compute the number of submatrices with side
 
 We can compute for each pair of distinct columns the number of 1s in common in each row. For every number $r$ of ones in common we add $\binom{r}{2}$. Using machine operations like with bitset we can speed up to $O(\frac{m^2n}{64})$ with a 64-bit compiler in this case.
 
-# [Problem C - Card Testing]({{site.url}}/do-panic/_sass/C.cpp)
+# [Problem C - Card Testing](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/C.cpp)
 
 ## Statement Summary
 
@@ -39,7 +39,7 @@ Given some values for an XML file, you must print the corresponding format follo
 
 This solve this problem we only need to implement some parsing function and do what the problem asks.
 
-# [Problem D - Distributing Pizza]({{site.url}}/do-panic/_sass/D.cpp)
+# [Problem D - Distributing Pizza](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/D.cpp)
 
 ## Statement Summary
 
@@ -82,7 +82,7 @@ for (int i=0, j=0; i<sums.size(); ++i) {
 }
 ```
 
-# [Problem E - Engraved Stones]({{site.url}}/do-panic/_sass/E.cpp)
+# [Problem E - Engraved Stones](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/E.cpp)
 
 ## Statement Summary
 
@@ -96,7 +96,7 @@ To solve it with Suffix Array, we can compute the Suffix array ($SA$) and LCP ar
 
 To learn how compute it with Suffix Automaton, you can check [this tutorial](https://cp-algorithms.web.app/string/suffix-automaton.html#longest-common-substring-of-two-strings)
 
-# [Problem F - Flip]({{site.url}}/do-panic/_sass/F.cpp)
+# [Problem F - Flip](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/F.cpp)
 
 ## Statement Summary
 
@@ -106,7 +106,7 @@ Given a $3 \times 3$ board with white and black cells, in one flip, the flipped 
 
 To solve this problem, we can just brute force the choice of flipping each possible cell ($2^{9}$ possibilities) and then minimize the number of flips
 
-# [Problem G - Game of Baker]({{site.url}}/do-panic/_sass/G.cpp)
+# [Problem G - Game of Baker](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/G.cpp)
 
 ## Statement Summary
 
@@ -135,7 +135,7 @@ However, due to the memory limit, we are not allowed to declare $memo$, which fo
 
 This reduces our memory usage to $O(1)$ and our complexity will be $O(N)$.
 
-# [Problem H - Hidden Number]({{site.url}}/do-panic/_sass/H.cpp)
+# [Problem H - Hidden Number](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/H.cpp)
 
 ## Statement Summary
 
@@ -149,7 +149,7 @@ On the other hand, if I have $k$ coins with a value of $1$ and a coin with a val
 
 Therefore, if we process the coins in order we can include new coins and "transform" them into $1$ coins. So the first time we have $k$ coins and a following coin $d$ with $d > k+1$ (assuming we add coin with infinite value), then we won't be able to form the value $k+1$.
 
-# [Problem I - Inserting Ominoes]({{site.url}}/do-panic/_sass/I.cpp)
+# [Problem I - Inserting Ominoes](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/I.cpp)
 
 ## Statement Summary
 
@@ -159,7 +159,7 @@ Given an image pattern and a board that consist of black and empty cells, we nee
 
 To solve this problem we can just brute force each possible rotation and flip of the pattern and then check if the image fits or not using naive pattern searching. Since there will be a small number of different configurations, then it will fit in the time limit.
 
-# [Problem J - Jaime's Room]({{site.url}}/do-panic/_sass/J.cpp)
+# [Problem J - Jaime's Room](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/J.cpp)
 
 ## Statement Summary
 
@@ -182,7 +182,7 @@ To eliminate a color we just have to go through each range and if it doesn't hav
 
 Therefore, the cost we want to minimize is $B + \frac{n}{B} \log B$. whose optimal value for $n = 100000$ is $B \sim 942$.
 
-## [Solution 2]({{site.url}}/do-panic/_sass/J2.cpp) __(Amortized Analysis)__
+## [Solution 2](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/J2.cpp) __(Amortized Analysis)__
 
 Let's consider that we get rid of the deletion query (b $k$), then this is a trivial problem that can be solved in $O(n\log{n})$ using sets and intervals for ranges with the same box. However, to add the deletion query we must notice that an object in the box $k$ is in the trash if:
 
@@ -195,7 +195,7 @@ For the second condition there si some subtle observation: The object was put in
 
 Finally, the complexity will be $O(q\log{n})$
 
-# [Problem K - Keep the Order]({{site.url}}/do-panic/_sass/K.cpp)
+# [Problem K - Keep the Order](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/K.py)
 
 ## Statement Summary
 
@@ -209,7 +209,7 @@ $$ C_{n} = \frac{2(2n - 1)}{n + 1}C_{n - 1} $$
 
 And to avoid implementing the BigInteger class we can use Python.
 
-# [Problem L - Lowest Risk Factor]({{site.url}}/do-panic/_sass/L.cpp)
+# [Problem L - Lowest Risk Factor](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/L.cpp)
 
 ## Statement Summary
 

@@ -1,8 +1,3 @@
----
-layout: post
-title: problem A.
----
-
 t = int(input())
 
 C = [1]

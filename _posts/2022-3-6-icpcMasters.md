@@ -3,7 +3,7 @@ layout: post
 title: ICPC Masters Mexico Unofficial Editorial
 ---
 
-# [Problem A - Animal Farm]({{site.url}}/do-panic/A.md)
+# [Problem A - Animal Farm](https://raw.githubusercontent.com/peon-pasado/do-panic/master/codes/A.cpp)
 
 ## Statement Summary
 

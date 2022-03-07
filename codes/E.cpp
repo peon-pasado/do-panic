@@ -1,8 +1,3 @@
----
-layout: post
-title: problem A.
----
-
 #include<bits/stdc++.h>
 using namespace::std;
 

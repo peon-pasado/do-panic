@@ -1,9 +1,3 @@
----
-layout: page
-title: problem A.
----
-
-```c++
 #include<bits/stdc++.h>
 using namespace::std;
 
@@ -125,4 +119,3 @@ int main(){
 	}
 	return 0;
 }
-```

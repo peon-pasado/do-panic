@@ -43,7 +43,7 @@ This solve this problem we only need to implement some parsing function and do w
 
 ## Statement Summary
 
-Given a cyclic array of length $k$, we want to partition it into $n$ subarrays in such a way that the difference between the minimum and maximum sum in each subarray is minimal.
+Given a cyclic array of length $k$, we want to partition it into $n$ subarrays in such a way that the difference between the minimum and maximum sum in each subarray is minimal. Array elements are positive.
 
 ## Solution
 

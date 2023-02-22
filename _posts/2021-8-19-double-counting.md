@@ -135,29 +135,19 @@ en $B$ contiene a lo más $d$ elementos de $X$, entonces $|X| \le |B| \frac{d}{d
 
 ### **Nivel 4:** Burnside Lemma
 
-Supongamos que el grupo finito $G$ actúa sobre el conjunto finito $X$. Es bastante 
-natural considerar la relación $R$ sobre $G \times X$ al referirnos a puntos
-fijos sobre acciones. Nosotros definimos que $g \in G$ y $x \in X$ están relacionados si $g$ fija
-$x$. Simbólicamente:
+Supongamos que el grupo finito $G$ actúa sobre el conjunto finito $X$. Es bastante  natural considerar la relación $R$ sobre $G \times X$ al referirnos a puntos fijos sobre acciones. Nosotros definimos que $g \in G$ y $x \in X$ están relacionados si $g$ fija $x$. Simbólicamente:
 
 $$R = \{(g, x) \in G \times X ~\vert ~ g . x = x\}$$
 
 Ahora, de lo anterior, tenemos las projecciones $p: R \rightarrow G$ y $q: R \rightarrow X$. 
 
-Nosotros podemos interpretar $p^{-1}(g)$, para $g \in G$. Como el conjunto 
-de puntos fijos de $g$ actuando sobre $X$, que denotamos como $X^g$. ¿Qué 
-hay acerca de $q^{-1} (x)$, para $x \in X$? Este es precisamente el 
-estabilizador de $x$, i.e. El subgrupo de $G$ consistiendo de puntos cual 
-fijan $x$. Denotado por $G_x$.
+Nosotros podemos interpretar $p^{-1}(g)$, para $g \in G$. Como el conjunto de puntos fijos de $g$ actuando sobre $X$, que denotamos como $X^g$. ¿Qué hay acerca de $q^{-1} (x)$, para $x \in X$? Este es precisamente el estabilizador de $x$, i.e. El subgrupo de $G$ consistiendo de puntos cual fijan $x$. Denotado por $G_x$.
 
 Así el doble conteo nos da la identidad:
 
 $$\sum_{g \in G} |X^g| = \sum_{x \in X} |G_x|$$
 
-Nosotros podemos reinterpretar esta formula por recalcar que si $x$ e $y$ están
-en la misma orbita de $G$, entonces $G_x$ y $G_y$ son conjugados. Así nosotros
-podemos reagrupar la segunda suma en sumas sobre el conjunto de clases
-representativas de orbitas $x_1, \dots, x_n$, y así reescribir esto como:
+Nosotros podemos reinterpretar esta formula por recalcar que si $x$ e $y$ están en la misma orbita de $G$, entonces $G_x$ y $G_y$ son conjugados. Así nosotros podemos reagrupar la segunda suma en sumas sobre el conjunto de clases representativas de orbitas $x_1, \dots, x_n$, y así reescribir esto como:
 
 $$\sum_{i=1}^n \sum_{y \in O(x_i)} |G_y| = \sum_{i = 1}^n |O(x_i)||G_{x_i}| = \sum_{i = 1}^n |G| = n |G|$$
 
@@ -165,15 +155,13 @@ Con lo que concluimos:
 
 $$\sum_{g \in G} |X^g| = n|G|$$
 
-Donde $n$ denota el número de orbitas de $G$ actuando sobre $X$. Dividiendo ambos lados
-por $|G|$, nosotros encontramos que:
+Donde $n$ denota el número de orbitas de $G$ actuando sobre $X$. Dividiendo ambos lados por $|G|$, nosotros encontramos que:
 
 $$\frac{1}{|G|}\sum_{g \in G} |X^g| = n$$
 
 O, en otras paralabras:
 
-El número promedio de puntos fijos de un elemento de $G$ actuando sobre $X$ es igual al número de órbitas
-de $G$ actuando sobre $X$.
+El número promedio de puntos fijos de un elemento de $G$ actuando sobre $X$ es igual al número de órbitas de $G$ actuando sobre $X$.
 
 
 ## Referencias:
